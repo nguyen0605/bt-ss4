@@ -21,19 +21,19 @@ int main(int argc, char** argv) {
 	}
 	else if(SoDien>=50 && SoDien<100)
 	{
-		TienDien=SoDien*15000;
+		TienDien=(SoDien-50)*15000+500000;
 	}
 	else if(SoDien>=100 && SoDien<150)
 	{
-		TienDien=SoDien*20000;
+		TienDien=(SoDien-100)*20000+1250000;
 	}
 	else if(SoDien>=150 && SoDien<200)
 	{
-		TienDien=SoDien*25000;
+		TienDien=(SoDien-150)*25000+2250000;
 	}
 	else if(SoDien>=200)
 	{
-		TienDien=SoDien*30000;
+		TienDien=(SoDien-200)*30000+3500000;
 	}
 	printf("So tien dien phai tra la %ld dong\n", TienDien);
 	}
